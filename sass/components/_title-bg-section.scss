@@ -1,6 +1,6 @@
 .title-section {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(images/background-mobile.jpg);
+    url(../images/background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   max-width: 480px;
@@ -44,13 +44,13 @@
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .title-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(images/background-mobile@2x.jpg);
+      url(../images/background-mobile@2x.jpg);
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .title-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(images/background-tablet.jpg);
+      url(../images/background-tablet.jpg);
     max-width: 768px;
   }
 }
@@ -59,14 +59,14 @@
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .title-section {
     background-image: linear-gradient(to bottom, #2f303a66, #2f303a66),
-      url(images/background-tablet@2x.jpg);
+      url(../images/background-tablet@2x.jpg);
     background-size: 768px 400px;
   }
 }
 @media (min-width: 1200px) {
   .title-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(images/background-desktop.jpg);
+      url(../images/background-desktop.jpg);
     max-width: 1600px;
     height: 600px;
   
@@ -85,7 +85,7 @@
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .title-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(images/background-desktop@2x.jpg);
+      url(../images/background-desktop@2x.jpg);
     max-width: 1600px;
     height: 600px;
   }
