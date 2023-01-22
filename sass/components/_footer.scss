@@ -1,0 +1,219 @@
+.footer {
+  background-color: $black-footer-background-color;
+  font-size: 0.88rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+
+  &__container {
+    width: 480px;
+    height: 453px;
+    padding-left: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+  }
+  &__item-list {
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+  }
+  &__item {
+    margin-bottom: 9px;
+  }
+  &__contact {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.24;
+    letter-spacing: 0.03em;
+    color: $gray-text-color;
+    text-decoration: none;
+    font-style: normal;
+  }
+  &__contact:hover {
+    color: $hover-text-color;
+  }
+  &__address {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.24;
+    letter-spacing: 0.03em;
+    color: $white-text-color;
+    text-decoration: none;
+    font-style: normal;
+    white-space: nowrap;
+  }
+  &__address:hover {
+    color: $hover-text-color;
+  }
+  /* footer section icons */
+  &__icons-wrapper {
+    min-width: 320px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  &__icon-list {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__icon-item:not(:first-child) {
+    margin-left: 10px;
+  }
+  &__icons-wrapper-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: $white-text-color;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: $white-text-color;
+    background-color: $footer-icon-background;
+    border-radius: 50%;
+  }
+  &__icon-link:hover,
+  &__icon-link:focus {
+    background-color: $hover-text-color;
+  }
+  &_button-wrapper {
+    min-width: 320px;
+    max-width: 480px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  &_form-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $white-text-color;
+    text-transform: uppercase;
+  }
+  &_form {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  &_button-input {
+    width: 450px;
+    height: 50px;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #ffffff4d;
+    background-color: $black-footer-background-color;
+    color: $white-text-color;
+    outline: none;
+    padding-left: 16px;
+    align-items: center;
+  }
+  &_button {
+    position: relative;
+    background-color: $hover-text-color;
+    color: $white-text-color;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  &_button-icon {
+    margin-left: 24px;
+    fill: $white-text-color;
+    transition: $transition-v1;
+  }
+  &_icon-link:hover,
+  &_icon-link:focus {
+    background-color: $hover-text-color;
+    transition: $transition-v1;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    padding-top: 0px;
+  &__container {
+    width: 768px;
+    height: 463px;
+    display: flex;
+    margin-left: 67px;
+  }
+  &__item-list {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+  }
+  &_button-wrapper {
+    margin-left: 100px;
+    margin-top: 60px;
+  }
+  &_button-input {
+    height: 50px;
+    width: 450px;
+  }
+}
+}
+@media (min-width: 1200px) {
+  .footer {
+    padding-top: 0px;
+  &__container {
+    min-width: 1200px;
+    height: 200px;
+    display: flex;
+    margin-left: 0px;
+    flex-direction: row;
+    text-align: left;
+    justify-content: left;
+  }
+  &__icons-wrapper-title {
+    text-align: left;
+    margin-left: 60px;
+  }
+  &__icons-wrapper {
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+  &_form {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 600px;
+  }
+  &_form-title {
+    text-align: left;
+    margin-left: 15px;
+  }
+  &_button-input {
+    height: 50px;
+    width: 358px;
+  }
+  &_button-wrapper {
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+  &_button {
+    margin-left: 13px;
+  }
+}
+}

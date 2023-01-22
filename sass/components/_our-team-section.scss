@@ -1,0 +1,115 @@
+.our-team-section {
+  background-color: $our-team-background-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+
+  &__container {
+    min-width: 320px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  &__title {
+    color: $black-text-color;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.42;
+    padding-bottom: 50px;
+    margin: 0px;
+    text-align: center;
+  }
+  &_item-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    padding-left: 0px;
+    gap: 30px;
+  }
+  &__item {
+    max-width: 100%;
+    margin-bottom: 30px;
+    background-color: $our-team-background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__text-wrapper {
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+  &__name {
+    text-align: center;
+    color: $black-text-color;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+    margin-bottom: 10px;
+  }
+  &__describtion {
+    color: $gray-text-color;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: $our-team-icons-colos;
+    cursor: pointer;
+    margin-top: 16px;
+  }
+  &__icon:hover,
+  &__icon:focus {
+    color: $white-text-color;
+    background-color: $hover-text-color;
+    border-radius: 50%;
+  }
+  &__icon:not(:last-child) {
+    margin-right: 10px;
+  }
+  &__icon {
+    fill: currentColor;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .out-team-section {
+    padding-top: 0px;
+  }
+  .our-team-section__container {
+    min-width: 768px;
+    max-width: 1199px;
+    margin: 0 auto;
+  }
+  .our-team-section__item {
+    max-width: 354px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .our-team-section__container {
+    min-width: 1200px;
+  }
+  .our-team-section_item-list {
+    flex-wrap: nowrap;
+  }
+}

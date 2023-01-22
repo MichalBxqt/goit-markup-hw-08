@@ -1,0 +1,115 @@
+.mobile {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: $white-text-color;
+  
+&__icon {
+      fill: var(--black-text-color);
+    }
+&__icon:hover,
+&__icon:focus {
+      fill: var(--hover-text-color);
+      cursor: pointer;
+    }
+&__icon-close {
+      position: absolute;
+      border: none;
+      top: 16px;
+      right: 16px;
+    }
+&__icon-close:hover,
+&__icon-close:focus {
+      fill: var(--hover-text-color);
+      cursor: pointer;
+    }
+&__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: $border-color;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    opacity: 0;
+  }
+&__container.is-open {
+    opacity: 1;
+    transform: translateX(0);
+  }
+&__menu {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+  }
+&__menu-link {
+    color: $black-text-color;
+    text-decoration: none;
+    display: flex;
+    margin-top: 20px;
+  }
+&__menu-link:hover {
+    color: $hover-text-color;
+  }
+&__contact-list {
+    margin-top: 200px;
+    text-decoration: none;
+  }
+&__contact-item-phone {
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+&__contact-item-email {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-top: 32px;
+  }
+&__contact-link-phone {
+    text-decoration: none;
+    color: $hover-text-color;
+  }
+&__contact-link-email {
+    text-decoration: none;
+    color: $gray-text-color;
+  }
+&__sm-list {
+    display: flex;
+    list-style: none;
+    margin-top: 64px;
+    column-gap: 10px;
+  }
+&__sm-item:not(:first-child) {
+    border-left: 1px solid #21212133;
+    padding-left: 10px;
+  }
+&__sm-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: $hover-text-color;
+  }
+}
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .mobile {
+        display: none;
+      }
+  }
+
+  @media (min-width: 1200px) {
+    .mobile {
+        display: none;
+      }
+  }

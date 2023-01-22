@@ -1,0 +1,14 @@
+.footer-logo {
+    color: $white-text-color;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.31;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  
+&__font-color {
+    color: $hover-text-color;
+  }
+}

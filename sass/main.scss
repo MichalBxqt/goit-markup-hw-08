@@ -1,0 +1,60 @@
+@import './utils/vars';
+@import './components/logo';
+@import './components/header';
+@import './components/footer-logo';
+@import './components/footer';
+@import "./components/modal-form";
+@import "./components/pf-button-section";
+@import "./components/pf-photo-section";
+@import "./components/our-team-section";
+@import "./components/wwd-section";
+@import "./components/lorem-section";
+@import "./components/our-clients-section";
+@import "./components/nav-section";
+@import "./components/mobile-form";
+@import "./components/title-bg-section";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $gray-text-color;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container {
+  min-width: 320px;
+  max-width: 480px;
+}
+div {
+  min-height: auto;
+  height: min-content;
+  max-width: 100%;
+}
+header {
+  padding: 19px 0px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms 250ms ease-in-out, visibility 250ms 250ms ease-in-out;
+}
+.is-hidden .modal__box {
+  transform: scale(-0.5, 1);
+}

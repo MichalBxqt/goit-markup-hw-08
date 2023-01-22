@@ -1,0 +1,15 @@
+.logo {
+    color: $black-text-color;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.31;
+    text-decoration: none;
+    margin-right: 93px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 0px;
+  
+&__font-color {
+    color: $hover-text-color;
+  }
+}
